@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dark Mode Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      };
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+      }
+    </script>
+  </head>
+  <body class="bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen flex flex-col items-center justify-center">
+
+    <h1 class="text-3xl font-bold mb-4">Hello, Tailwind Dark Mode!</h1>
+    <button
+      onclick="toggleDarkMode()"
+      class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+    >
+      Toggle Dark Mode
+    </button>
+
+  </body>
+</html>
