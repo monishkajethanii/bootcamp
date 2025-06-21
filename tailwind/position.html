@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body>
-    <div class="h-[900px]">
-        <div class="static bg-yellow-200">I'm static</div>
-        <div class="relative top-14 left-4 bg-green-200">I'm relative</div>
-        <div class="relative bg-gray-100 w-64 h-40 top-20">
-            <div class="absolute top-2 left-2 bg-blue-300 p-2">I'm absolute</div>
-        </div>
-        <div class="fixed bottom-4 right-4 bg-red-300 p-2">
-            I'm fixed at bottom-right
-        </div>
-        <div class="sticky top-0 bg-purple-300 p-2">
-            I'm sticky header
-        </div>
+    <div class="flex justify-center items-center h-20 border-2 border-red-900">
+        <p class="font-light text-lg">Box 1</p>
+        <p class="font-bold text-7xl">Box 2</p>
+        <p class="italic text-purple-800 border-2 border-red-900 rounded-full">Box 3</p>
+        <input type="text" class="ring" name="" id="">
+    </div>
+
+    <div class="divide-x flex divide-gray-800 shadow-lg">
+        <p >Item 1</p>
+        <p>Item 2</p>
+    </div>
+    <button class="shadow-lg bg-blue-500 rounded-full m-10 p-1 text-white">Click me</button>
+    <div class="space-y-5">
+
+        <img src="eye.jpeg" alt="" class="opacity-50">
+        <img src="eye.jpeg" alt="" class="blur">
+        <img src="eye.jpeg" alt="" class="grayscale">
     </div>
 </body>
 </html>
