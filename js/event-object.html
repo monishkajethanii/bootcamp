@@ -1,0 +1,15 @@
+<button id="b1">Click me again</button>
+<script>
+  const b = document.getElementById("b1");
+  b.addEventListener("click", (e) => {
+    alert("hello");
+    console.log('type : ',e.type)
+    // what type of event it is 
+    console.log('element : ',e.target) 
+    // from where it is originating
+    console.log('View : ',e.view)
+    // it guides the location according to entire window
+
+    console.log('timestamp: ',e.timeStamp)
+  });
+</script>

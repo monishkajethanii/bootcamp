@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function monishka()
+        {
+            console.log('button is clicked')
+        }
+        function mouse()
+        {
+            console.log('button is mouse over')
+        }
+        function out()
+        {
+            alert('button is moused out')
+        }
+        
+    </script>
+</head>
+<body>
+    <!-- inline on word prefix hai but in add event listener actual word is mentioned like 'click' -->
+    <input type="text" id="t1">
+    <button onclick="monishka()" onmouseover="mouse()" onmouseout="out()">i'm button</button>
+</body>
+<script>
+    const t = document.getElementById("t1");
+        t.addEventListener("keydown",function () {
+            console.warn('key down event occured')
+        })
+</script>
+</html>
