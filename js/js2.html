@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- main() -->
+    <p id="demo"></p>
+  </body>
+  <script>
+    const array = ["monishka", "komal"];
+    console.log(array);
+    // or
+    const names = new Array("monishka", "komal");
+    // or
+    const animals = [];
+    animals[0] = "cat";
+    animals[1] = "dogs";
+    console.log(animals);
+
+    // values can be changed
+    animals[0] = "tiger";
+
+    // accessing by their index
+    console.log(animals[0]);
+
+    // length of an array
+    console.log('length of animals array ', animals.length)
+
+    // add in an array
+    animals.push('cats')
+
+    // remove an element 
+    animals.pop()
+    document.getElementById("demo").innerHTML = animals;
+  </script>
+</html>
